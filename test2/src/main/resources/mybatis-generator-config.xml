@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <!--mysql 连接数据库jar 这里选择自己本地位置-->
+    <classPathEntry location="D:\JAVA\lib\mysql-connector-java-8.0.19.jar" />
+    <context id="testTables" targetRuntime="MyBatis3">
+
+
+        <commentGenerator>
+            <!-- 是否去除自动生成的注释 true：是 ： false:否 -->
+            <property name="suppressAllComments" value="true" />
+        </commentGenerator>
+        <!--数据库连接的信息：驱动类、连接地址、用户名、密码 -->
+        <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/easyloan?useUnicode=true&amp;characterEncoding=utf-8&amp;serverTimezone=UTC" userId="root"
+                        password="Mn11037-">
+        </jdbcConnection>
+        <!-- 默认false，把JDBC DECIMAL 和 NUMERIC 类型解析为 Integer，为 true时把JDBC DECIMAL 和
+           NUMERIC 类型解析为java.math.BigDecimal -->
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false" />
+        </javaTypeResolver>
+
+        <!-- targetProject:生成entity类的位置 -->
+        <javaModelGenerator targetPackage="com.example.demo.entity"
+                            targetProject="src/main/java">
+            <!-- enableSubPackages:是否让schema作为包的后缀 -->
+            <property name="enableSubPackages" value="false" />
+            <!-- 从数据库返回的值被清理前后的空格 -->
+            <property name="trimStrings" value="true" />
+        </javaModelGenerator>
+        <!-- targetProject:mapper映射文件生成的位置
+           如果maven工程只是单独的一个工程，targetProject="src/main/java"
+           若果maven工程是分模块的工程，targetProject="所属模块的名称"，例如：
+           targetProject="ecps-manager-mapper"，下同-->
+        <sqlMapGenerator targetPackage="mapper"
+                         targetProject="src/main/resources">
+            <!-- enableSubPackages:是否让schema作为包的后缀 -->
+            <property name="enableSubPackages" value="false" />
+        </sqlMapGenerator>
+        <!-- targetPackage：mapper接口生成的位置 -->
+        <javaClientGenerator type="XMLMAPPER"
+                             targetPackage="com.example.demo.mapper"
+                             targetProject="src/main/java">
+            <!-- enableSubPackages:是否让schema作为包的后缀 -->
+            <property name="enableSubPackages" value="false" />
+        </javaClientGenerator>
+
+
+        <!-- 指定数据库表 -->
+
+        <!-- 要生成的表 tableName是数据库中的表名或视图名 domainObjectName是实体类名 schema 重复代码生成-->
+        <table schema="" tableName="user" >
+            <!--设置自增字段-->
+            <generatedKey  column="user_id"  identity="false" sqlStatement="JDBC"/>
+        </table>
+
+        <table schema="" tableName="department" >
+        </table>
+
+        <table schema="" tableName="audit" >
+            <!--设置自增字段-->
+            <generatedKey  column="aud_id"  identity="false" sqlStatement="JDBC"/>
+        </table>
+
+        <table schema="" tableName="employee" >
+            <!--设置自增字段-->
+            <generatedKey  column="emp_id"  identity="false" sqlStatement="JDBC"/>
+        </table>
+
+        <table schema="" tableName="expected_repay" >
+            <!--设置自增字段-->
+            <generatedKey  column="exp_id"  identity="false" sqlStatement="JDBC"/>
+        </table>
+
+        <table schema="" tableName="linkman" >
+        </table>
+
+        <table schema="" tableName="loan_apply" >
+            <!--设置自增字段-->
+            <generatedKey  column="loan_id"  identity="false" sqlStatement="JDBC"/>
+        </table>
+
+        <table schema="" tableName="manager" >
+            <!--设置自增字段-->
+            <generatedKey  column="m_id"  identity="false" sqlStatement="JDBC"/>
+        </table>
+
+        <table schema="" tableName="manage" >
+        </table>
+
+        <table schema="" tableName="overdue_times" >
+            <!--设置自增字段-->
+            <generatedKey  column="overdue_id"  identity="false" sqlStatement="JDBC"/>
+        </table>
+
+        <table schema="" tableName="real_repay" >
+            <!--设置自增字段-->
+            <generatedKey  column="real_id"  identity="false" sqlStatement="JDBC"/>
+
+        </table>
+
+        <!--数据库对应的表-->
+        <table schema="" tableName="user_login" >
+
+        </table>
+
+    </context>
+</generatorConfiguration>
