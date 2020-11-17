@@ -1,0 +1,123 @@
+body {
+  background-color: #F1F1F1;
+}
+
+
+.w
+{
+  width: 1640px;
+  margin: 0 auto;
+}
+
+.con 
+{
+  position: relative;
+  height: 920px;
+  background-color: #ffffff;
+  
+}
+
+.con img 
+{
+  position: absolute;
+  left: 400px;
+  top: 180px;
+  width: 350px;
+  height: 350px;
+}
+
+.con p 
+{
+  position: absolute;
+  font:Raleway;
+  left: 480px;
+  top: 470px;
+  color: #02A7F0;
+  font-size: 75px;
+  font-weight: 2000;
+}
+
+.con t 
+{
+  position: absolute;
+  font: Light;
+  left: 1020px;
+  top: 140px;
+  color: #000000;
+  font-size: 40px;
+  font-weight: 2000;
+}
+
+.con usn
+{
+  position: absolute;
+  font: Light;
+  left: 850px;
+  top: 200px;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 2000;
+}
+
+
+.con usp
+{
+  position: absolute;
+  font: Light;
+  left: 850px;
+  top: 330px;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 2000;
+}
+
+.con uspc
+{
+  position: absolute;
+  font: Light;
+  left: 850px;
+  top: 460px;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 2000;
+}
+
+.con namein
+{
+    position: absolute;
+    left :850px;
+    top :240px;
+}
+
+.con pswin
+{
+    position: absolute;
+    left :850px;
+    top :370px;
+}
+
+.con pswinc
+{
+    position: absolute;
+    left :850px;
+    top :500px;
+}
+
+
+.con reg 
+{
+  position: absolute;
+  left:987px;
+  top:590px;
+}
+
+
+.con footer_link
+{
+  margin-left:600px;
+  margin-top:790px;
+  position: absolute;
+}
+
+
+

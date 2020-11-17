@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="eroll@localhost" uuid="98707e8a-ccfe-4b69-9422-18ef40ff3cc5">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/eroll?useUnicode=true&amp;characterEncoding=utf-8&amp;serverTimezone=UTC</jdbc-url>
+    </data-source>
+  </component>
+</project>

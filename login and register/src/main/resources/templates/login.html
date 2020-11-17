@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login.css">
+    <title>登录</title>
+</head>
+<body>
+<div class="con w">
+    <img src="img/logo.png">
+    <b><P>e点名</P></b>
+
+    <!--文字-->
+    <t>登录</t>
+
+    <usn>用户名</usn>
+
+    <usp>密码</usp>
+
+    <!--输入表单-->
+    <form action="/user/login" method="post">
+
+        <!--用户名输入-->
+        <namein>
+            <input name="username" type="text" class="username" style="font-size:21px;border-radius:10px;border:0px;height:30px;width:400px;background-color: #F2F2F2">
+        </namein>
+
+
+        <!--密码输入-->
+        <pswin>
+            <input name="password" type="password" class="password" style="font-size:21px;border-radius:10px;border:0px;height:30px;width:400px;background-color: #F2F2F2">
+        </pswin>
+
+        <!--记住密码勾选框-->
+        <psw_rem_b>
+            <input type="checkbox" value="" style="width: 21px;height: 21px;" >
+        </psw_rem_b>
+
+        <!--登录按钮-->
+        <log>
+            <input type="submit" value ="登录" style="font-size:20px;width: 150px;height: 40px;border-radius:10px;border:0px;background-color: #F2F2F2" >
+        </log>
+
+    </form>
+
+
+    <psw_rem>记住密码</psw_rem>
+
+    <!--下面两个是加链接的-->
+    <psw_fgt>
+        <input type="button" value="忘记密码" style="font-size:21px;background-color:transparent;border-style:none; cursor:pointer;" />
+    </psw_fgt>
+
+    <reg>
+        <input type="button" value="注册" style="font-size:18px;background-color:transparent;border-style:none; cursor:pointer;"/>
+    </reg>
+
+    <!--文字-->
+    <regtext>
+        您还没有账户？
+    </regtext>
+
+    <!--去掉链接下划线-->
+    <style>a{TEXT-DECORATION:none}</style>
+
+    <!--链接-->
+    <footer_link>
+        <a href="#">关于我们 </a> &nbsp;|&nbsp; <a href="#">网站地图 </a> &nbsp;|&nbsp; <a href="#">版权声明</a>
+        &nbsp;|&nbsp;<a href="#">招聘信息</a> &nbsp;|&nbsp; <a href="#">帮助中心</a> &nbsp;|&nbsp; <a href="#">在线客服</a>
+        <footer_link>
+
+</div>
+
+</body>
